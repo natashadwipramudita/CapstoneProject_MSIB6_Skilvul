@@ -47,7 +47,7 @@ if scaler is None:
     st.stop()
 
 def make_prediction(input_data):
-    model_path = 'D:/MSIB batch 6 - project/CapstoneProject_Grup44-main/model-training/random_forest_model.pkl'
+    model_path = 'model-training/random_forest_model.pkl'
     if not os.path.exists(model_path):
         st.error(f"Model path {model_path} does not exist.")
         return None
