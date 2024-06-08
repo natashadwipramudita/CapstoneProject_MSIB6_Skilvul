@@ -10,7 +10,7 @@ scaler = StandardScaler()
 # Fungsi untuk load dan fit the scaler
 @st.cache_data
 def fit_scaler():
-    dataset_path = "D:/MSIB batch 6 - project/CapstoneProject_Grup44-main/model-training/dataset/Credit Score Classification Dataset.csv"
+    dataset_path = "model-training/dataset/Credit Score Classification Dataset.csv"
     if not os.path.exists(dataset_path):
         st.error(f"Dataset path {dataset_path} does not exist.")
         return None
